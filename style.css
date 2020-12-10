@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/bg-pattern-top.svg") right 49vw bottom 40vh no-repeat, url("../images/bg-pattern-bottom.svg") left 50vw top 49vh no-repeat;
+  background-color: #19a2ae;
+  font-family: 'Kumbh Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container .card {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.container .card .card__hero {
+  position: relative;
+  height: 140px;
+  background: url(images/bg-pattern-card.svg);
+}
+
+.container .card .card__hero img {
+  position: absolute;
+  top: 9rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.container .card .card__body {
+  margin: 70px 0 10px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.container .card .card__body .card__name {
+  font-weight: 700;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.container .card .card__body .card__name span {
+  font-weight: 400;
+  color: #969696;
+  margin-left: 3px;
+}
+
+.container .card .card__body .card__city {
+  font-size: 0.9rem;
+  color: #969696;
+}
+
+.container .card .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 30px 0;
+}
+
+.container .card .followers, .container .card .likes, .container .card .photos {
+  text-align: center;
+}
+
+.container .card .followers {
+  line-height: 1.1;
+}
+
+.container .card .followers h4 {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.container .card .followers span {
+  font-size: 0.65rem;
+  color: #969696;
+  letter-spacing: 2px;
+}
+
+.container .card .likes {
+  line-height: 1.1;
+}
+
+.container .card .likes h4 {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.container .card .likes span {
+  font-size: 0.65rem;
+  color: #969696;
+  letter-spacing: 2px;
+}
+
+.container .card .photos {
+  line-height: 1.1;
+}
+
+.container .card .photos h4 {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.container .card .photos span {
+  font-size: 0.65rem;
+  color: #969696;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */

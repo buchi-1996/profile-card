@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+$text-dark: #444;
+
+
+body{
+    background: url("../images/bg-pattern-top.svg") right 49vw bottom 40vh no-repeat ,
+    url("../images/bg-pattern-bottom.svg")left 50vw top 49vh no-repeat;
+
+    background-color: $Dark-cyan;
+    font-family:'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+.container{
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .card{
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+
+        .card__hero{
+            position: relative;
+            height: 140px;
+            background: url(images/bg-pattern-card.svg);
+            
+
+            img{
+                position: absolute;
+                top: 9rem;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                
+            }
+        }
+
+        .card__body{
+            margin: 70px 0 10px;
+            text-align: center;
+            line-height: 1.8;
+
+            .card__name{
+                font-weight: 700;
+                color: $text-dark;
+                font-size: 1.1rem;
+
+                span{
+                    font-weight: 400;
+                    color: $Dark-gray;
+                    margin-left: 3px;
+                }
+            }
+
+            .card__city{
+                font-size: 0.9rem;
+                color: $Dark-gray;
+            }
+        }
+
+
+        .card__footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.125);
+            padding: 30px 0;
+        }
+
+        .followers, .likes, .photos{
+            text-align: center;
+        }
+
+        .followers{
+            line-height: 1.1;
+
+            h4{
+                font-size: 1.1rem;
+                color: $text-dark;
+            }
+
+            span{
+                font-size: 0.65rem;
+                color: $Dark-gray;
+                letter-spacing: 2px;
+            }
+        }
+
+        .likes{
+            line-height: 1.1;
+
+            h4{
+                font-size: 1.1rem;
+                color: $text-dark;
+            }
+
+            span{
+                font-size: 0.65rem;
+                color: $Dark-gray;
+                letter-spacing: 2px;
+            }
+        }
+
+        .photos{
+            line-height: 1.1;
+
+            h4{
+                font-size: 1.1rem;
+                color: $text-dark;
+            }
+
+            span{
+                font-size: 0.65rem;
+                color: $Dark-gray;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
